@@ -25,11 +25,11 @@ function srch()
 				content+="<div class='col-md-3 recipe'><a target='_blank' href="+res_data.hits[j].recipe.url+"<center><img src="+res_data.hits[j].recipe.image+"></center></a><center><p><h3>"+res_data.hits[j].recipe.label+"</h3></p></center><center><p>Time: "+res_data.hits[j].recipe.totalTime+"</p></center><p>Calories: "+res_data.hits[j].recipe.calories+"</p></center></div>"
 				if(rowcount%3==0)
 					{
-						content+="</div>"
-						break;
+						content+="</div><div calss='row'>"
+						
 					}
 
-			}
+			}content+="</div>"
 		    
 		
 
